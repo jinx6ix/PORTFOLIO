@@ -4,6 +4,11 @@ import Link from "next/link"
 import React, { useState} from "react"
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 
+type NavLink = {
+    title: string;
+    path: string;
+};
+
 const navLinks = [
     {title: "About", path: "#about"},
     {title: "Portfolio", path: "#portfolio"},
