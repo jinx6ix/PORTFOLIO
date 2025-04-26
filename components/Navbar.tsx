@@ -9,6 +9,7 @@ const navLinks = [
     {title: "Portfolio", path: "#portfolio"},
     {title: "Stack", path: "#stack"},
     {title: "Contact", path: "#contact"},
+    {title: "Projects", path: "#projects"},
 ]
 
 export const Navbar = () => {
@@ -23,7 +24,7 @@ export const Navbar = () => {
     }
     return (
         <div className="z-50 fixed flex justify-center w-full text-white font-bold">
-            <div className="border border-white/20 mt-8 backdrop-blur-3xl rounded-3xl hidden md:flex items-center justify-center p-2 max-w-[400px] mx-auto">
+            <div className="border border-white/20 mt-8 backdrop-blur-3xl rounded-3xl hidden md:flex items-center justify-center p-2 max-w-[600px] mx-auto">
                 <ul className="flex flex-row p-2 space-x-8">
                     {navLinks.map((link, index) => (
                         <li key={index}>
