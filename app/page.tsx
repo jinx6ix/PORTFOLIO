@@ -7,6 +7,7 @@ import { Navbar } from "@/components/Navbar";
 import { Portfolio } from "@/components/Portfolio";
 import { Services } from "@/components/Services";
 import { Stack } from "@/components/Stack";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <LogoAnimation />
         <Portfolio />
         <KeyMetrics />
+        <Projects />
         <Services />
         <Contact />
         <Footer />
