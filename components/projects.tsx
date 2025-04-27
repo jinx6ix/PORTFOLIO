@@ -14,7 +14,7 @@ const projects = [
       "A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
     image: "/assets/Screenshot 2025-04-27 013857.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
-    githubUrl: "https://github.com/jinx6ix/ecommerce",
+    githubUrl: "https://github.com/jinx6ix/ecommerce-html",
     liveUrl: "https://ecommerce-html-nu.vercel.app/",
     date: "March 2023",
   },
