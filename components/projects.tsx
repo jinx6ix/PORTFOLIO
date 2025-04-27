@@ -16,7 +16,7 @@ const projects = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
     githubUrl: "https://github.com/jinx6ix/ecommerce-html",
     liveUrl: "https://ecommerce-html-nu.vercel.app/",
-    date: "March 2023",
+    date: "March 2025s",
   },
   {
     id: 2,
