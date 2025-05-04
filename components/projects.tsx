@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Github, ExternalLink, Calendar } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import image_photo from "@/assets/Screenshot.png"
+import image_photo from "@/assets/proj5.png"
 // Sample project data - replace with your actual projects
 const projects = [
   {
