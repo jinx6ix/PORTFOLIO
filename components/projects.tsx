@@ -12,7 +12,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
-    image: {image_photo},
+    image: image_photo,
     
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
     githubUrl: "https://github.com/jinx6ix/ecommerce-html",
