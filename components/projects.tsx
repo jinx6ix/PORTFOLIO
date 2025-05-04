@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Github, ExternalLink, Calendar } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-
+import image_photo from "@/assets/Screenshot.png"
 // Sample project data - replace with your actual projects
 const projects = [
   {
@@ -12,7 +12,8 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "A full-stack e-commerce platform with product management, cart functionality, and payment processing.",
-    image: "/assets/Screenshot 2025-04-27 013857.png",
+    image: {image_photo},
+    
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL"],
     githubUrl: "https://github.com/jinx6ix/ecommerce-html",
     liveUrl: "https://ecommerce-html-nu.vercel.app/",
@@ -27,7 +28,7 @@ const projects = [
     technologies: ["React", "Redux", "Node.js", "Express", "MongoDB"],
     githubUrl: "https://github.com/yourusername/task-manager",
     liveUrl: "https://task-manager-demo.vercel.app",
-    date: "January 2023",
+    date: "January 2025",
   },
   {
     id: 3,
@@ -37,7 +38,7 @@ const projects = [
     technologies: ["React", "Chart.js", "OpenWeather API", "Mapbox"],
     githubUrl: "https://github.com/yourusername/weather-app",
     liveUrl: "https://weather-dashboard-demo.vercel.app",
-    date: "November 2022",
+    date: "November 2024",
   },
   {
     id: 4,
@@ -47,7 +48,7 @@ const projects = [
     technologies: ["Next.js", "Framer Motion", "Three.js", "Tailwind CSS"],
     githubUrl: "https://github.com/yourusername/portfolio",
     liveUrl: "https://yourportfolio.com",
-    date: "September 2022",
+    date: "September 2023",
   },
   {
     id: 5,
@@ -58,7 +59,7 @@ const projects = [
     technologies: ["Next.js", "MDX", "Auth.js", "Vercel"],
     githubUrl: "https://github.com/yourusername/blog-platform",
     liveUrl: "https://blog-platform-demo.vercel.app",
-    date: "July 2022",
+    date: "July 2024",
   },
   {
     id: 6,
@@ -68,7 +69,7 @@ const projects = [
     technologies: ["Vue.js", "D3.js", "Firebase", "Tailwind CSS"],
     githubUrl: "https://github.com/yourusername/social-dashboard",
     liveUrl: "https://social-dashboard-demo.vercel.app",
-    date: "May 2022",
+    date: "May 2024",
   },
 ]
 
