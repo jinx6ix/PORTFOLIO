@@ -4,7 +4,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { Github, ExternalLink, Calendar } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import image_photo from "@/assets/proj5.png"
+import image_photo from "@/assets/proj.png"
+import image_photo1 from "@/assets/Screenshot 2025-05-07 191800.png"
+import image_photo2 from "@/assets/proj6.png"
+import image_photo3 from "@/assets/proj7.png"
+import image_photo4 from "@/assets/proj9.png"
+import image_photo5 from "@/assets/proj13.png"
 // Sample project data - replace with your actual projects
 const projects = [
   {
@@ -24,7 +29,7 @@ const projects = [
     title: "Task Management App",
     description:
       "A productivity application for managing tasks, projects, and deadlines with team collaboration features.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: image_photo2,
     technologies: ["React", "Redux", "Node.js", "Express", "MongoDB"],
     githubUrl: "https://github.com/yourusername/task-manager",
     liveUrl: "https://task-manager-demo.vercel.app",
@@ -34,17 +39,17 @@ const projects = [
     id: 3,
     title: "Weather Dashboard",
     description: "A weather application that provides real-time forecasts, historical data, and interactive maps.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: image_photo1,
     technologies: ["React", "Chart.js", "OpenWeather API", "Mapbox"],
-    githubUrl: "https://github.com/yourusername/weather-app",
-    liveUrl: "https://weather-dashboard-demo.vercel.app",
+    githubUrl: "https://github.com/jinx6ix/WEATHER-APP.git",
+    liveUrl: "https://weather-app-kohl-mu-37.vercel.app/",
     date: "November 2024",
   },
   {
     id: 4,
     title: "Portfolio Website",
     description: "A personal portfolio website showcasing my skills, projects, and professional experience.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: image_photo3,
     technologies: ["Next.js", "Framer Motion", "Three.js", "Tailwind CSS"],
     githubUrl: "https://github.com/yourusername/portfolio",
     liveUrl: "https://yourportfolio.com",
@@ -55,7 +60,7 @@ const projects = [
     title: "Blog Platform",
     description:
       "A content management system for creating, editing, and publishing blog posts with user authentication.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: image_photo4,
     technologies: ["Next.js", "MDX", "Auth.js", "Vercel"],
     githubUrl: "https://github.com/yourusername/blog-platform",
     liveUrl: "https://blog-platform-demo.vercel.app",
@@ -65,7 +70,7 @@ const projects = [
     id: 6,
     title: "Social Media Dashboard",
     description: "An analytics dashboard for tracking social media metrics across multiple platforms.",
-    image: "/placeholder.svg?height=300&width=500",
+    image: image_photo5,
     technologies: ["Vue.js", "D3.js", "Firebase", "Tailwind CSS"],
     githubUrl: "https://github.com/yourusername/social-dashboard",
     liveUrl: "https://social-dashboard-demo.vercel.app",
