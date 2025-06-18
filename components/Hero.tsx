@@ -25,6 +25,22 @@ export const Hero = () => {
     const border = useMotionTemplate`1px solid ${color}`
     const boxShadow = useMotionTemplate`0px 4px 24px ${color}`
 
+    // Function to handle CV download
+    const handleDownloadCV = () => {
+        // Create a temporary anchor element
+        const link = document.createElement('a')
+        // Assuming your CV is in the public folder named 'Ian_Iraya_CV.pdf'
+        link.href = '/Ian_Iraya_CV.pdf'
+        // This makes the download attribute with the desired filename
+        link.download = 'Ian_Iraya_CV.pdf'
+        // Append to body (required for Firefox)
+        document.body.appendChild(link)
+        // Trigger the click
+        link.click()
+        // Clean up
+        document.body.removeChild(link)
+    }
+
     return (
         <motion.section 
         style={{
@@ -68,6 +84,7 @@ export const Hero = () => {
                     <p className="my-6 max-w-xl text-center">Fullstack Developer based in Kenya, with over 3 years experience</p>
 
                     <motion.button
+                        aria-label="Download Ian Iraya's CV"
                         style={{
                             border,
                             boxShadow
@@ -79,6 +96,7 @@ export const Hero = () => {
                             scale: 0.985
                         }}
                         className="flex w-fit items-center gap-2 rounded-full px-4 py-2 "
+                        onClick={handleDownloadCV} // Add the click handler here
                     >
                         Download CV
                         <FiArrowRight className=""/>
