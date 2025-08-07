@@ -8,48 +8,41 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ian Iraya | Full Stack Developer & Web Engineer & cybersecurity expert",
+  title: "Ian Iraya | Web Developer & Creative Technologist | Cybersecurity Expert",
   description:
-    "I'm Ian Iraya, a passionate full stack web developer specializing in modern web apps, custom dashboards, and secure hosting solutions. Let's build something great.",
-  keywords: [
-    "Ian Iraya",
-    "portfolio",
-    "full stack developer",
-    "websites in Kenya",
-    "Next.js developer",
-    "React developer",
-    "web developer Kenya",
-    "Node.js engineer",
-    "tailwind developer",
-    "frontend backend developer",
-  ],
-  authors: [{ name: "Ian Iraya", url: "https://portfolio2-delta-two-93.vercel.app/" }],
+    "Hi, I'm Ian Iraya — a full-stack web developer building creative, fast, and secure websites that convert. Explore my portfolio.",
+  metadataBase: new URL("https://portfolio2-delta-two-93.vercel.app/"),
+  verification: {
+    google: "hFLRkNLTiWW_pvLuqqXe-gZjop_3rJtLqKtpuxkByMc",
+  },
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
   openGraph: {
-    title: "Ian Iraya | Full Stack Developer & Web Engineer",
+    title: "Ian Iraya | Web Developer Portfolio",
     description:
-      "Portfolio of Ian Iraya, a developer building fast, secure, and scalable websites and apps with modern tools like Next.js, React, Tailwind, and Node.js.",
+      "Browse a collection of full-stack projects by Ian Iraya. Built with Next.js, Tailwind, and modern web tools.",
     url: "https://portfolio2-delta-two-93.vercel.app/",
     siteName: "Ian Iraya Portfolio",
-    type: "website",
-    locale: "en_US",
     images: [
       {
-        url: "/logo.png", // Replace with your portfolio OG image
-        width: 1200,
-        height: 630,
-        alt: "Ian Iraya Portfolio Preview",
+        url: "/logo.png",
+        width: 800,
+        height: 600,
+        alt: "Ian Iraya Logo",
       },
     ],
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ian Iraya | Full Stack Developer",
+    title: "Ian Iraya | Web Developer Portfolio",
     description:
-      "Check out Ian Iraya's developer portfolio – showcasing full stack apps, dashboards, cybersecurity tools, and more.",
-    creator: "@i_raya_w_ainaina", // Optional: replace with your Twitter handle
+      "Explore the professional web portfolio of Ian Iraya, showcasing modern full-stack web projects.",
     images: ["/logo.png"],
+    creator: "@i_raya_w_ainaina",
   },
-  metadataBase: new URL("https://portfolio2-delta-two-93.vercel.app/"),
 };
 
 export default function RootLayout({
@@ -60,21 +53,58 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Site Verification */}
-        <meta
-          name="google-site-verification"
-          content="hFLRkNLTiWW_pvLuqqXe-gZjop_3rJtLqKtpuxkByMc"
-        />
-        {/* Responsive Viewport */}
+        {/* Essential Meta */}
+        <meta name="author" content="Ian Iraya" />
+        <meta name="theme-color" content="#0f172a" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Favicon & Manifest */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="canonical" href="https://portfolio2-delta-two-93.vercel.app/" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Preconnect for Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+        {/* Structured Data (Schema.org) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Ian Iraya",
+              url: "https://portfolio2-delta-two-93.vercel.app/",
+              image: "https://portfolio2-delta-two-93.vercel.app/logo.png",
+              sameAs: [
+                "https://github.com/jinx6ix",
+                "https://twitter.com/i_raya_w_ainaina",
+                "https://www.linkedin.com/in/ian-iraya",
+              ],
+              jobTitle: "Web Developer, Creative Technologist, Cybersecurity Expert",
+              worksFor: {
+                "@type": "Organization",
+                name: "Ian Iraya Dev",
+              },
+            }),
+          }}
+        />
+
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-CK21QF38W4"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CK21QF38W4');
+            `,
+          }}
+        />
       </head>
-      <body className={`${poppins.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
 }
