@@ -8,29 +8,29 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ian Iraya | Web Developer & Creative Technologist | Cybersecurity Expert",
+  title: "Ian Iraya | Full-Stack Web Developer | Cybersecurity Specialist",
   description:
-    "Hi, I'm Ian Iraya — a full-stack web developer building creative, fast, and secure websites that convert. Explore my portfolio.",
+    "I'm Ian Iraya — a Kenyan-based full-stack web developer and cybersecurity enthusiast. I build fast, secure, and beautiful websites with Next.js, Tailwind CSS, and modern tools. Explore my portfolio and services.",
   metadataBase: new URL("https://portfolio2-delta-two-93.vercel.app/"),
   verification: {
     google: "hFLRkNLTiWW_pvLuqqXe-gZjop_3rJtLqKtpuxkByMc",
   },
   icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
-    title: "Ian Iraya | Web Developer Portfolio",
+    title: "Ian Iraya | Full-Stack Developer & Cybersecurity Specialist",
     description:
-      "Browse a collection of full-stack projects by Ian Iraya. Built with Next.js, Tailwind, and modern web tools.",
+      "Browse the portfolio of Ian Iraya. Discover fast, SEO-optimized, secure websites built with Next.js, React, and Node.js.",
     url: "https://portfolio2-delta-two-93.vercel.app/",
     siteName: "Ian Iraya Portfolio",
     images: [
       {
         url: "/logo.png",
-        width: 800,
-        height: 600,
-        alt: "Ian Iraya Logo",
+        width: 1200,
+        height: 630,
+        alt: "Ian Iraya Portfolio Logo",
       },
     ],
     type: "website",
@@ -39,10 +39,34 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ian Iraya | Web Developer Portfolio",
     description:
-      "Explore the professional web portfolio of Ian Iraya, showcasing modern full-stack web projects.",
+      "Explore my full-stack web projects, design approach, and secure builds. Built with Next.js, Tailwind CSS, and modern dev practices.",
     images: ["/logo.png"],
     creator: "@i_raya_w_ainaina",
   },
+  keywords: [
+    "Ian Iraya",
+    "Kenya web developer",
+    "full-stack developer portfolio",
+    "Next.js developer",
+    "Tailwind developer",
+    "cybersecurity expert",
+    "web performance optimization",
+    "secure web hosting",
+    "modern portfolio 2025",
+    "freelance developer Kenya",
+    "best web developer in Kenya",
+    "hire full-stack developer",
+  ],
+  authors: [
+    {
+      name: "Ian Iraya",
+      url: "https://portfolio2-delta-two-93.vercel.app/",
+    },
+  ],
+  creator: "Ian Iraya",
+  publisher: "Ian Iraya",
+  robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  category: "technology",
 };
 
 export default function RootLayout({
@@ -53,45 +77,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Essential Meta */}
-        <meta name="author" content="Ian Iraya" />
-        <meta name="theme-color" content="#0f172a" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://portfolio2-delta-two-93.vercel.app/" />
-        <meta name="robots" content="index, follow" />
-
-        {/* Preconnect for Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-
-        {/* Structured Data (Schema.org) */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Ian Iraya",
-              url: "https://portfolio2-delta-two-93.vercel.app/",
-              image: "https://portfolio2-delta-two-93.vercel.app/logo.png",
-              sameAs: [
-                "https://github.com/jinx6ix",
-                "https://twitter.com/i_raya_w_ainaina",
-                "https://www.linkedin.com/in/ian-iraya",
-              ],
-              jobTitle: "Web Developer, Creative Technologist, Cybersecurity Expert",
-              worksFor: {
-                "@type": "Organization",
-                name: "Ian Iraya Dev",
-              },
-            }),
-          }}
-        />
-
-        {/* Google Analytics */}
+        {/* Google Analytics Tag */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-CK21QF38W4"
+          src="https://www.googletagmanager.com/gtag/js?id=G-XJH3ZY2JMJ"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -99,7 +88,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-CK21QF38W4');
+              gtag('config', 'G-XJH3ZY2JMJ');
             `,
           }}
         />
