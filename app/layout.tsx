@@ -92,6 +92,42 @@ export default function RootLayout({
             `,
           }}
         />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Ian Iraya",
+      url: "https://portfolio2-delta-two-93.vercel.app/",
+      image: "https://portfolio2-delta-two-93.vercel.app/logo.png",
+      sameAs: [
+        "https://github.com/jinx6ix",
+        "https://www.linkedin.com/in/ian-iraya/",
+        "https://twitter.com/i_raya_w_ainaina"
+      ],
+      jobTitle: "Full-Stack Web Developer",
+      worksFor: {
+        "@type": "Organization",
+        name: "Ian Iraya Web Services"
+      },
+      alumniOf: {
+        "@type": "CollegeOrUniversity",
+        name: "BBIT, Kenyan University"
+      },
+      knowsAbout: [
+        "Next.js",
+        "React",
+        "Cybersecurity",
+        "Node.js",
+        "Web Development",
+        "Web Hosting",
+        "SEO"
+      ],
+    }),
+  }}
+/>
+
       </head>
       <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
