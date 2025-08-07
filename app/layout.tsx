@@ -8,9 +8,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ian Iraya | Full-Stack Web Developer | Cybersecurity Specialist",
+  title: "Ian Iraya | Full-Stack Web Developer | Cybersecurity & SEO Specialist",
   description:
-    "I'm Ian Iraya — a Kenyan-based full-stack web developer and cybersecurity enthusiast. I build fast, secure, and beautiful websites with Next.js, Tailwind CSS, and modern tools. Explore my portfolio and services.",
+    "I'm Ian Iraya — a Kenyan-based full-stack web developer, cybersecurity specialist, and SEO manager. I build fast, secure, and SEO-optimized websites using Next.js, Tailwind CSS, and modern tech.",
   metadataBase: new URL("https://portfolio2-delta-two-93.vercel.app/"),
   verification: {
     google: "hFLRkNLTiWW_pvLuqqXe-gZjop_3rJtLqKtpuxkByMc",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ian Iraya | Web Developer Portfolio",
     description:
-      "Explore my full-stack web projects, design approach, and secure builds. Built with Next.js, Tailwind CSS, and modern dev practices.",
+      "Explore my full-stack web projects, SEO management strategies, and secure builds. Built with Next.js, Tailwind CSS, and modern dev practices.",
     images: ["/logo.png"],
     creator: "@i_raya_w_ainaina",
   },
@@ -50,11 +50,13 @@ export const metadata: Metadata = {
     "Next.js developer",
     "Tailwind developer",
     "cybersecurity expert",
+    "SEO specialist",
+    "SEO management services",
+    "cybersecurity SEO",
     "web performance optimization",
     "secure web hosting",
     "modern portfolio 2025",
     "freelance developer Kenya",
-    "best web developer in Kenya",
     "hire full-stack developer",
   ],
   authors: [
@@ -65,7 +67,8 @@ export const metadata: Metadata = {
   ],
   creator: "Ian Iraya",
   publisher: "Ian Iraya",
-  robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  robots:
+    "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   category: "technology",
 };
 
@@ -92,44 +95,48 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* JSON-LD Structured Data */}
         <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: "Ian Iraya",
-      url: "https://portfolio2-delta-two-93.vercel.app/",
-      image: "https://portfolio2-delta-two-93.vercel.app/logo.png",
-      sameAs: [
-        "https://github.com/jinx6ix",
-        "https://www.linkedin.com/in/ian-iraya/",
-        "https://twitter.com/i_raya_w_ainaina"
-      ],
-      jobTitle: "Full-Stack Web Developer",
-      worksFor: {
-        "@type": "Organization",
-        name: "Ian Iraya Web Services"
-      },
-      alumniOf: {
-        "@type": "CollegeOrUniversity",
-        name: "BBIT, Kenyan University"
-      },
-      knowsAbout: [
-        "Next.js",
-        "React",
-        "Cybersecurity",
-        "Node.js",
-        "Web Development",
-        "Web Hosting",
-        "SEO"
-      ],
-    }),
-  }}
-/>
-
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Ian Iraya",
+              url: "https://portfolio2-delta-two-93.vercel.app/",
+              image: "https://portfolio2-delta-two-93.vercel.app/logo.png",
+              sameAs: [
+                "https://github.com/jinx6ix",
+                "https://www.linkedin.com/in/ian-iraya/",
+                "https://twitter.com/i_raya_w_ainaina",
+              ],
+              jobTitle: "Full-Stack Web Developer",
+              worksFor: {
+                "@type": "Organization",
+                name: "Ian Iraya Web Services",
+              },
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "BBIT, Kenyan University",
+              },
+              knowsAbout: [
+                "Next.js",
+                "React",
+                "Cybersecurity",
+                "Node.js",
+                "SEO",
+                "SEO management",
+                "Cybersecurity SEO",
+                "Web Hosting",
+                "Web Development",
+              ],
+            }),
+          }}
+        />
       </head>
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <body className={`${poppins.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
