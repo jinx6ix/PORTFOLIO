@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -44,20 +47,105 @@ export const metadata: Metadata = {
     creator: "@i_raya_w_ainaina",
   },
   keywords: [
+    // Personal Branding
     "Ian Iraya",
+    "Ian Iraya portfolio",
+    "Ian Iraya developer",
+    "Ian Iraya Kenya",
+    
+    // Development Services
     "Kenya web developer",
+    "Nairobi web developer",
     "full-stack developer portfolio",
     "Next.js developer",
-    "Tailwind developer",
+    "React developer Kenya",
+    "Node.js developer",
+    "TypeScript developer",
+    "Tailwind CSS developer",
+    "MongoDB developer",
+    "GraphQL developer",
+    
+    // Specializations
     "cybersecurity expert",
-    "SEO specialist",
+    "web security specialist",
+    "penetration testing services",
+    "vulnerability management",
+    "DDoS protection",
+    
+    // SEO Services
+    "SEO specialist Kenya",
     "SEO management services",
     "cybersecurity SEO",
+    "technical SEO audit",
+    "keyword research services",
+    "content optimization",
+    "SEO automation tools",
+    
+    // Performance & Hosting
     "web performance optimization",
-    "secure web hosting",
+    "website speed optimization",
+    "secure web hosting Kenya",
+    "high-uptime hosting",
+    "SSD web hosting",
+    "enterprise hosting solutions",
+    
+    // Design & Portfolio
     "modern portfolio 2025",
+    "responsive web design",
+    "UI/UX design services",
+    "developer portfolio design",
+    
+    // Business Services
     "freelance developer Kenya",
     "hire full-stack developer",
+    "web development agency",
+    "custom web applications",
+    "e-commerce development",
+    "API development services",
+    
+    // Maintenance & Support
+    "website maintenance plans",
+    "WordPress maintenance",
+    "security updates service",
+    "website backup solutions",
+    "emergency website support",
+    
+    // Digital Marketing
+    "PPC advertising Kenya",
+    "social media marketing",
+    "email marketing campaigns",
+    "conversion rate optimization",
+    "digital marketing strategy",
+    
+    // Project Types
+    "business website development",
+    "portfolio website design",
+    "web application development",
+    "real-time chat applications",
+    "analytics dashboard development",
+    "learning management systems",
+    
+    // Technologies
+    "Next.js projects",
+    "React projects",
+    "Node.js projects",
+    "MongoDB projects",
+    "Tailwind CSS projects",
+    "TypeScript projects",
+    "GraphQL projects",
+    
+    // Location-Based
+    "web developer Nairobi",
+    "tech services Kenya",
+    "African web developer",
+    "East Africa cybersecurity",
+    
+    // Industry Terms
+    "web development best practices",
+    "modern web technologies",
+    "responsive web applications",
+    "progressive web apps",
+    "Jamstack development"
   ],
   authors: [
     {
@@ -135,7 +223,10 @@ export default function RootLayout({
         />
       </head>
       <body className={`${poppins.className} antialiased`}>
+        <Navbar />
         {children}
+        <Contact />
+        <Footer />
       </body>
     </html>
   );

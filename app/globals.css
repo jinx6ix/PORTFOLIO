@@ -19,6 +19,26 @@
   }
 }
 
+.animated-bg {
+  background: linear-gradient(-45deg, #ff6b6b, #f7d794, #1dd1a1, #54a0ff);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Slick Carousel Styling */
+.slick-slide {
+  padding: 0 10px;
+}
+.slick-prev:before, .slick-next:before {
+  color: white;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

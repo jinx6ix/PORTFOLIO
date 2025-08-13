@@ -25,7 +25,7 @@ const socialLinks = [
     color: "hover:text-blue-500"
   },
   { 
-    href: "https://instagram.com/yourhandle", 
+    href: "https://instagram.com/@i_raya_w_ainaina", 
     Icon: AiFillInstagram, 
     label: "Instagram",
     color: "hover:text-pink-500"
@@ -37,7 +37,7 @@ const socialLinks = [
     color: "hover:text-blue-300"
   },
   { 
-    href: "mailto:your@email.com", 
+    href: "mailto:irayaian15@gmail.com", 
     Icon: AiOutlineMail, 
     label: "Email",
     color: "hover:text-red-400"
