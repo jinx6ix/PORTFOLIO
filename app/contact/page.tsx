@@ -264,10 +264,10 @@ export default function ContactPage() {
               <h3 className="text-xl font-bold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
                 {[
-                  { name: "Twitter", href: "#" },
-                  { name: "LinkedIn", href: "#" },
-                  { name: "GitHub", href: "#" },
-                  { name: "Instagram", href: "#" }
+                  { name: "Twitter", href: "https://x.com/Sijui_niseme_?t=oIajxPVrtGrESsP7yEj_WA&s=09" },
+                  { name: "LinkedIn", href: "https://www.linkedin.com/in/ian-iraya-5a0780378/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BL4Hpl9rpRiazu5VbuwY6GQ%3D%3D" },
+                  { name: "GitHub", href: "https://github.com/jinx6ix/" },
+                  { name: "Instagram", href: "https://instagram.com/@i_raya_w_ainaina" }
                 ].map((social, index) => (
                   <motion.a
                     key={index}

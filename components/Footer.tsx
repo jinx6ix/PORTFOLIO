@@ -7,19 +7,19 @@ import { FiArrowUpRight } from 'react-icons/fi'
 
 const socialLinks = [
   { 
-    href: "https://github.com/yourusername", 
+    href: "https://github.com/jinx6ix/", 
     Icon: AiFillGithub, 
     label: "GitHub",
     color: "hover:text-purple-400"
   },
   { 
-    href: "https://x.com/yourhandle", 
+    href: "https://x.com/Sijui_niseme_?t=oIajxPVrtGrESsP7yEj_WA&s=09", 
     Icon: AiOutlineTwitter, 
     label: "X (Twitter)",
     color: "hover:text-blue-400"
   },
   { 
-    href: "https://linkedin.com/in/yourprofile", 
+    href: "https://www.linkedin.com/in/ian-iraya-5a0780378/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BL4Hpl9rpRiazu5VbuwY6GQ%3D%3D", 
     Icon: FaLinkedinIn, 
     label: "LinkedIn",
     color: "hover:text-blue-500"
