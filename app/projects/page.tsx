@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -176,6 +176,7 @@ export default function ProjectsPage() {
     });
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <main className="min-h-screen bg-gray-950 text-gray-100">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
@@ -504,5 +505,6 @@ export default function ProjectsPage() {
         </motion.div>
       </section>
     </main>
+    </Suspense>
   );
 }
