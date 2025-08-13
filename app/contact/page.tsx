@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import { FiMail, FiPhone, FiMapPin, FiSend, FiUser, FiMessageSquare } from "react-icons/fi";
 import Link from "next/link";
 
-
-
 type FormData = {
   name: string;
   email: string;
@@ -29,22 +27,22 @@ export default function ContactPage() {
       icon: <FiMail className="text-blue-400 text-2xl" />,
       title: "Email Us",
       description: "Send us a message anytime",
-      value: "contact@ianiraya.com",
-      href: "mailto:contact@ianiraya.com"
+      value: "irayaian15@gmail.com",
+      href: "mailto:irayaian15@gmail.com"
     },
     {
       icon: <FiPhone className="text-purple-400 text-2xl" />,
       title: "Call Us",
-      description: "Mon-Fri from 9am-5pm",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      description: "Available 24/7 for urgent inquiries",
+      value: "+254 757 662968",
+      href: "tel:+254757662968"
     },
     {
       icon: <FiMapPin className="text-green-400 text-2xl" />,
-      title: "Visit Us",
-      description: "Our headquarters",
-      value: "123 Tech Street, San Francisco, CA 94107",
-      href: "https://maps.google.com"
+      title: "Our Location",
+      description: "Based in Kiambu, serving globally",
+      value: "Ikinu Town, Githunguri, Kiambu County, Kenya",
+      href: "https://maps.google.com?q=Ikinu+Town,+Githunguri,+Kiambu+County,+Kenya"
     }
   ];
 
@@ -77,7 +75,7 @@ export default function ContactPage() {
             transition={{ delay: 0.2 }}
             className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-gray-300"
           >
-            Have questions or ready to start your project? Reach out to our team today.
+            Available for local and international projects. Reach out anytime!
           </motion.p>
         </div>
       </section>
@@ -243,20 +241,20 @@ export default function ContactPage() {
             </div>
 
             <div className="pt-8">
-              <h3 className="text-xl font-bold mb-4">Business Hours</h3>
+              <h3 className="text-xl font-bold mb-4">Availability</h3>
               <div className="bg-gray-800/50 border border-gray-700 rounded-xl p-6">
                 <ul className="space-y-3">
                   <li className="flex justify-between">
-                    <span className="text-gray-400">Monday - Friday</span>
-                    <span>9:00 AM - 5:00 PM</span>
+                    <span className="text-gray-400">Sunday - Sunday</span>
+                    <span>24/7 Availability</span>
                   </li>
                   <li className="flex justify-between">
-                    <span className="text-gray-400">Saturday</span>
-                    <span>10:00 AM - 2:00 PM</span>
+                    <span className="text-gray-400">Phone Support</span>
+                    <span>All Day</span>
                   </li>
                   <li className="flex justify-between">
-                    <span className="text-gray-400">Sunday</span>
-                    <span>Closed</span>
+                    <span className="text-gray-400">Response Time</span>
+                    <span>Within 24 hours</span>
                   </li>
                 </ul>
               </div>
@@ -286,27 +284,6 @@ export default function ContactPage() {
             </div>
           </motion.div>
         </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="container mx-auto px-6 pb-24">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="bg-gray-800/50 border border-gray-700 rounded-2xl overflow-hidden"
-        >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.434420326498!2d-122.4194159243692!3d37.77492957186648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            className="rounded-2xl"
-          ></iframe>
-        </motion.div>
       </section>
     </main>
   );
