@@ -205,7 +205,7 @@ export default function RootLayout({
               },
               alumniOf: {
                 "@type": "CollegeOrUniversity",
-                name: "BBIT, Kenyan University",
+                name: "BCSIT, East African University",
               },
               knowsAbout: [
                 "Next.js",
